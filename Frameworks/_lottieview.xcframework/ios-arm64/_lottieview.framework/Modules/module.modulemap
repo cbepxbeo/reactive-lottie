@@ -1,0 +1,11 @@
+framework module _lottieview {
+  umbrella header "_lottieview.h"
+
+  export *
+  module * { export * }
+}
+
+module _lottieview.Swift {
+  header "_lottieview-Swift.h"
+  requires objc
+}

@@ -1,0 +1,76 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name _lottieview
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Compression
+import CoreFoundation
+import CoreGraphics
+import CoreText
+import Foundation
+import QuartzCore
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+@_exported import _lottieview
+import zlib
+infix operator +| : DefaultPrecedence
+infix operator +- : DefaultPrecedence
+extension _lottieview._LottieView {
+  public enum AnimationState {
+    case play, pause, stop
+    public static func == (a: _lottieview._LottieView.AnimationState, b: _lottieview._LottieView.AnimationState) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum LoopMode {
+    case loop, playOnce
+    public static func == (a: _lottieview._LottieView.LoopMode, b: _lottieview._LottieView.LoopMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Foundation.Bundle : @unchecked Swift.Sendable {
+}
+public protocol _LottieViewWrapper : SwiftUI.View {
+  associatedtype Content : _lottieview._LottieViewComponent
+  var content: Self.Content { get set }
+}
+extension _lottieview._LottieViewWrapper {
+  public var body: some SwiftUI.View {
+    get
+  }
+  public func _setSpeed(_ speed: CoreFoundation.CGFloat) -> Self
+  public func _setLoopMode(_ loopMode: _lottieview._LottieView.LoopMode) -> Self
+  public func _setContentMode(_ contentMode: UIKit.UIView.ContentMode) -> Self
+}
+public protocol _LottieViewComponent : SwiftUI.View {
+  init(name: Swift.String, state: SwiftUI.Binding<_lottieview._LottieView.AnimationState>?)
+  func _setSpeed(_ speed: CoreFoundation.CGFloat) -> Self
+  func _setLoopMode(_ loopMode: _lottieview._LottieView.LoopMode) -> Self
+  func _setContentMode(_ contentMode: UIKit.UIView.ContentMode) -> Self
+}
+public protocol _UnilateralRoundedRectangleComponentView : SwiftUI.View {
+  func setColor(_ color: SwiftUI.Color) -> Self
+  func setAlignment(_ alignment: SwiftUI.Edge) -> Self
+  func setCornerRadius(_ cornerRadius: CoreFoundation.CGFloat) -> Self
+}
+public struct _LottieView : _lottieview._LottieViewComponent {
+  public init(name: Swift.String, state: SwiftUI.Binding<_lottieview._LottieView.AnimationState>? = nil)
+  public func _setSpeed(_ speed: CoreFoundation.CGFloat) -> _lottieview._LottieView
+  public func _setLoopMode(_ loopMode: _lottieview._LottieView.LoopMode) -> _lottieview._LottieView
+  public func _setContentMode(_ contentMode: UIKit.UIView.ContentMode) -> _lottieview._LottieView
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11_lottieview11_LottieViewV4bodyQrvp", 0) __
+}
+extension _lottieview._LottieView.AnimationState : Swift.Equatable {}
+extension _lottieview._LottieView.AnimationState : Swift.Hashable {}
+extension _lottieview._LottieView.LoopMode : Swift.Equatable {}
+extension _lottieview._LottieView.LoopMode : Swift.Hashable {}
