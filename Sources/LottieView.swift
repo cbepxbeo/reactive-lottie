@@ -17,13 +17,17 @@ public typealias LVAnimationState = _LottieView.AnimationState
 public typealias LVLoopMode = _LottieView.LoopMode
 
 @frozen public struct LottieView<T: _LottieViewComponent>: _LottieViewWrapper {
+    ///The main content that does the work, including models and wrappers. You don't have to worry about this property.
     public var content: T
+    ///Set animation speed
     public func setSpeed(_ speed: CGFloat) -> LottieView {
         self._setSpeed(speed)
     }
+    ///Set loop mode
     public func setLoopMode(_ loopMode: LVLoopMode) -> LottieView {
         self._setLoopMode(loopMode)
     }
+    ///Set content mode
     public func setContentMode(_ contentMode: UIView.ContentMode) -> LottieView {
         self._setContentMode(contentMode)
     }

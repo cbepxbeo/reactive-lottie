@@ -1,9 +1,3 @@
-//
-//  ReactiveContentMode.swift
-//  ExampleProject
-//
-//  Created by Егор Бойко on 21.12.2022.
-//
 
 import SwiftUI
 import ReactiveLottie
