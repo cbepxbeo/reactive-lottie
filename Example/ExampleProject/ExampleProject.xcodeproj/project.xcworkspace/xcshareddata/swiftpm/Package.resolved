@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "reactive-lottie",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cbepxbeo/reactive-lottie.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ccc7bd240827030960487d16f6ebce0449a39b80"
+      }
+    }
+  ],
+  "version" : 2
+}

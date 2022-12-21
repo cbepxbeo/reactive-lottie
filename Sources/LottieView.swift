@@ -18,13 +18,13 @@ public typealias LVLoopMode = _LottieView.LoopMode
 
 @frozen public struct LottieView<T: _LottieViewComponent>: _LottieViewWrapper {
     public var content: T
-    func setSpeed(_ speed: CGFloat) -> LottieView {
+    public func setSpeed(_ speed: CGFloat) -> LottieView {
         self._setSpeed(speed)
     }
-    func setLoopMode(_ loopMode: LVLoopMode) -> LottieView {
+    public func setLoopMode(_ loopMode: LVLoopMode) -> LottieView {
         self._setLoopMode(loopMode)
     }
-    func setContentMode(_ contentMode: UIView.ContentMode) -> LottieView {
+    public func setContentMode(_ contentMode: UIView.ContentMode) -> LottieView {
         self._setContentMode(contentMode)
     }
 }
