@@ -2453,7 +2453,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:state:)",
+            "printedName": "init(name:bundle:state:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2465,6 +2465,12 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
               },
               {
                 "kind": "TypeNominal",
@@ -2490,8 +2496,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11_lottieview20_LottieViewComponentP4name5statexSS_7SwiftUI7BindingVyAA01_bC0V14AnimationStateOGSgtcfc",
-            "mangledName": "$s11_lottieview20_LottieViewComponentP4name5statexSS_7SwiftUI7BindingVyAA01_bC0V14AnimationStateOGSgtcfc",
+            "usr": "s:11_lottieview20_LottieViewComponentP4name6bundle5statexSS_So8NSBundleC7SwiftUI7BindingVyAA01_bC0V14AnimationStateOGSgtcfc",
+            "mangledName": "$s11_lottieview20_LottieViewComponentP4name6bundle5statexSS_So8NSBundleC7SwiftUI7BindingVyAA01_bC0V14AnimationStateOGSgtcfc",
             "moduleName": "_lottieview",
             "genericSig": "<τ_0_0 where τ_0_0 : _lottieview._LottieViewComponent>",
             "sugared_genericSig": "<Self where Self : _lottieview._LottieViewComponent>",
@@ -2795,7 +2801,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:state:)",
+            "printedName": "init(name:bundle:state:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2808,6 +2814,12 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
               },
               {
                 "kind": "TypeNominal",
@@ -2834,8 +2846,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11_lottieview11_LottieViewV4name5stateACSS_7SwiftUI7BindingVyAC14AnimationStateOGSgtcfc",
-            "mangledName": "$s11_lottieview11_LottieViewV4name5stateACSS_7SwiftUI7BindingVyAC14AnimationStateOGSgtcfc",
+            "usr": "s:11_lottieview11_LottieViewV4name6bundle5stateACSS_So8NSBundleC7SwiftUI7BindingVyAC14AnimationStateOGSgtcfc",
+            "mangledName": "$s11_lottieview11_LottieViewV4name6bundle5stateACSS_So8NSBundleC7SwiftUI7BindingVyAC14AnimationStateOGSgtcfc",
             "moduleName": "_lottieview",
             "declAttributes": [
               "AccessControl"
@@ -10245,7 +10257,7 @@
     {
       "filePath": "\/Users\/egor\/Desktop\/XCFrame\/_lottieview\/_lottieview\/LottieView\/LottieView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1480,
+      "offset": 1548,
       "length": 1,
       "value": "0"
     },

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name _lottieview
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name _lottieview
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Compression
 import CoreFoundation
@@ -50,7 +50,7 @@ extension _lottieview._LottieViewWrapper {
   public func _setContentMode(_ contentMode: UIKit.UIView.ContentMode) -> Self
 }
 public protocol _LottieViewComponent : SwiftUI.View {
-  init(name: Swift.String, state: SwiftUI.Binding<_lottieview._LottieView.AnimationState>?)
+  init(name: Swift.String, bundle: Foundation.Bundle, state: SwiftUI.Binding<_lottieview._LottieView.AnimationState>?)
   func _setSpeed(_ speed: CoreFoundation.CGFloat) -> Self
   func _setLoopMode(_ loopMode: _lottieview._LottieView.LoopMode) -> Self
   func _setContentMode(_ contentMode: UIKit.UIView.ContentMode) -> Self
@@ -61,7 +61,7 @@ public protocol _UnilateralRoundedRectangleComponentView : SwiftUI.View {
   func setCornerRadius(_ cornerRadius: CoreFoundation.CGFloat) -> Self
 }
 public struct _LottieView : _lottieview._LottieViewComponent {
-  public init(name: Swift.String, state: SwiftUI.Binding<_lottieview._LottieView.AnimationState>? = nil)
+  public init(name: Swift.String, bundle: Foundation.Bundle, state: SwiftUI.Binding<_lottieview._LottieView.AnimationState>? = nil)
   public func _setSpeed(_ speed: CoreFoundation.CGFloat) -> _lottieview._LottieView
   public func _setLoopMode(_ loopMode: _lottieview._LottieView.LoopMode) -> _lottieview._LottieView
   public func _setContentMode(_ contentMode: UIKit.UIView.ContentMode) -> _lottieview._LottieView

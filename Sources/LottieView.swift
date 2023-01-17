@@ -34,7 +34,7 @@ public typealias LVLoopMode = _LottieView.LoopMode
 }
 
 public extension LottieView where T == LVComponent {
-    init(name: String, state: Binding<LVAnimationState>? = nil){
-        self.content = .init(name: name, state: state)
+    init(name: String, bundle: Bundle = .main, state: Binding<LVAnimationState>? = nil){
+        self.content = .init(name: name, bundle: bundle, state: state)
     }
 }
